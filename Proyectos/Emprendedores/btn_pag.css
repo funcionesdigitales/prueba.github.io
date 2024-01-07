@@ -1,0 +1,16 @@
+.bar-paginas {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.bar-paginas ul{
+    display:flex;
+    margin-left: 10px;
+
+}
+
+

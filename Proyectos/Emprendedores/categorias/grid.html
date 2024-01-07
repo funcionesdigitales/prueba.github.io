@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--estilos de prueba css-->
+    <link rel="stylesheet" href="vertical.css">
+    <!--estilos de prueba css-->
+    <link rel="stylesheet" href="../light-box.css">
+    <!--estilos de prueba css-->
+    <link rel="stylesheet" href="../nav-flotante.css">
+</head>
+
+<body>
+    <div class="grid_body">
+        <div class="logo">
+            <img src="../Img/logo.jpg" alt="Emprendedores logo" class="nav-brand">
+        </div>
+        <section class="menu">
+            <div class="hamburguesa">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <nav class="menu_horizontal">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="javascript:abrir_somos()">Quiénes somos ?</a></li>
+                    <li><a href="javascript:abrir_Preguntas()">Preguntas frecuentes</a></li>
+                    <li><a href="mailto:info.emprendedores.uy@gmail.com?subject">Contáctanos</a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <div class="menu_vertical">
+            <div class="wrap">
+                <h1>Categorias</h1>
+                <div class="store-wrapper">
+                    <div class="category_list">
+                        <a href="#" class="category_item" category="all">Todos</a>
+                        <a href="#" class="category_item" category="Salud">Salud</a>
+                        <a href="#" class="category_item" category="Recreacion">Recreación</a>
+                        <a href="#" class="category_item" category="Servicios">Servicio</a>
+                        <a href="#" class="category_item" category="Ropa">Ropa</a>
+                    </div>
+                    <section class="producto-list">
+                        <div class="producto-item" category="#">
+                            <img src="-- IMG -- categoria" alt="">
+                            <a href="#">"Nombre de la categoria"</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="cuerpo">
+            <div>
+                <hr>
+                <!--Imagen principal = Showcase-->
+                <header class="showcase">
+                    <!--Aqui va la Imagen 1-->
+                </header>
+                <hr>
+                <div>
+                    <section>
+                        <!--inicio ventana flotante-->
+                        <div class="flotante" id="somos">
+                            <a href="#"></a>
+                            <img src="/Proyectos/Emprendedores/Img/images.jpg">
+                            <a class="flot" href="javascript:cerrar_somos()">x</a>
+                            <h2>Somos un grupo de personas con proyectos propios de emprendimientos principalmente
+                                dentro de la
+                                República Oriental del Uruguay.</h2>
+                        </div>
+                        <div class="flotante dos" id="Preg">
+                            <a href="#"></a>
+                            <img src="/Proyectos/Emprendedores/Img/Interrogantes.jpg">
+                            <a class="flot" href="javascript:cerrar_Preguntas()">x</a>
+                            <div class="texto">
+                                <h1>¿Para que me sirve la Web?</h1>
+                                <h2>Es un apoyo para todos aquellos emprendedores dentro del Uruguay que no tienen la
+                                    posibilidad de
+                                    expandirse dentro del
+                                    Internet y realizar su propio Marketing Digital.</h2>
+                                <h1>¿Qué costo tiene?</h1>
+                                <h2>Este servicio no posee ningún costo, es totalmente gratis.</h2>
+                                <h1>¿Qué tengo que hacer?</h1>
+                                <h2>Debes tener una imagen en formato JPG, PNG, GIF que no supere en espacio de 1MB de
+                                    capacidad,
+                                    con
+                                    una
+                                    resolución mínima
+                                    de 600x600 pixeles y como máximo 1.080x1.080 pixeles.</h2>
+                            </div>
+                        </div>
+                        <!--fin ventana flotante-->
+
+
+
+                    </section>
+
+                    <!--Tarjetas 1ra fila-->
+                    <section>
+                        <div class="tarjetas">
+                            <!--Tarjeta 1 con lightbox-->
+                            <div class="tarjetas-cuadro">
+                                <a href="#imagen1" id="C001">
+                                    <img class="img" src="../Img/cliente/001.png">
+                                </a>
+                                <div class="lightbox" id="imagen1">
+                                    <a class="close" href="#" style="text-decoration: none;">X</a>
+                                    <img src="../Img/cliente/001.png">
+                                </div>
+                                <div class="a">
+                                    <a href="#imagen1">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 2 con lightbox-->
+                            <div class="tarjetas-cuadro">
+                                <a href="#imagen2" id="C002">
+                                    <img class="img" src="../Img/cliente/002.png">
+                                </a>
+                                <div class="lightbox" id="imagen2">
+                                    <a class="close" href="#" style="text-decoration: none;">X</a>
+                                    <img src="../Img/cliente/002.png">
+                                </div>
+                                <div class="a">
+                                    <a href="#imagen2">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 3 con lightbox-->
+                            <div class="tarjetas-cuadro">
+                                <a href="#imagen3" id="C003">
+                                    <img class="img" src="../Img/cliente/003.png">
+                                </a>
+                                <div class="lightbox" id="imagen3">
+                                    <a class="close" href="#" style="text-decoration: none;">X</a>
+                                    <img src="../Img/cliente/003.png">
+                                </div>
+                                <div class="a">
+                                    <a href="#imagen3">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 4 con lightbox-->
+                            <div class="tarjetas-cuadro">
+                                <a href="#imagen4" id="C004">
+                                    <img class="img" src="../Img/cliente/004.png">
+                                </a>
+                                <div class="lightbox" id="imagen4">
+                                    <a class="close" href="#" style="text-decoration: none;">X</a>
+                                    <img src="../Img/cliente/004.png">
+                                </div>
+                                <div class="a">
+                                    <a href="#imagen4">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 5 con lightbox-->
+                            <div class="tarjetas-cuadro">
+                                <a href="#imagen5" id="C005">
+                                    <img class="img" src="../Img/cliente/005.png">
+                                </a>
+                                <div class="lightbox" id="imagen5">
+                                    <a class="close" href="#" style="text-decoration: none;">X</a>
+                                    <img src="../Img/cliente/005.png">
+                                </div>
+                                <div class="a">
+                                    <a href="#imagen5">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjetas 2da fila-->
+                            <!--Tarjeta 1-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 1">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 2-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 2">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 3-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 3">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 4-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 5-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="banner1">
+                        <div class=container>
+                            <p>Si tienes un sueño en tu corazón, y de verdad crees en él, corre el riesgo de que se
+                                convertira
+                                en
+                                realidad.</p>
+                            <h2>Walt Disney</h2>
+                            <a href="#" class="btn">Ver más <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </section>
+                    <!--Tarjetas 3ra fila-->
+                    <section>
+                        <div class="tarjetas">
+                            <!--Tarjeta 1-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 1">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 2-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 2">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 3-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 3">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 4-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 5-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjetas 4ta fila-->
+                            <!--Tarjeta 1-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 1">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 2-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 2">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 3-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 3">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 4-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                            <!--Tarjeta 5-->
+                            <div class="tarjetas-cuadro">
+                                <img src="../Img/Disponible.png" alt="Cliente 4">
+                                <!--<h3>Lorem ipsum dolor sit amet.</h3>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, amet.</p>-->
+                                <div class="a">
+                                    <a href="#">Ver más...<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="bar-paginas">
+                        <ul class="paginas" role="navigation">
+                            <!--
+                                        <li class="pagina_button"><a href="#">1</a></li>
+                                        <li class="pagina_button"><a href="#">2</a></li>
+                                        <li class="pagina_button"><a href="#">3</a></li>
+                                        <li class="pagina_button"><a href="#">4</a></li>
+                                        <li class="pagina_button"><a href="#">5</a></li>
+                                        <li class="pagina_button"><a href="#">6</a></li>-->
+                        </ul>
+                    </div>
+
+                    <!--<div class="mas">
+                                    <a href="Pag_02.html" class="btn">Siguiente página...<i class="fas fa-angle-double-right"></i></a>
+                                </div>-->
+                    <section class="social">
+                        <p>Emprendedores</p>
+                        <div class="link">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="pie_pagina">
+            <footer class="footer">
+                <h1>&#169; CopyRight - Funciones Digitales</h1>
+            </footer>
+        </div>
+    </div>
+    <!--inicio java ventana flotante-->
+    <script>
+        function abrir_somos() {
+            document.getElementById("somos").style.display = "block";
+        }
+
+        function cerrar_somos() {
+            document.getElementById("somos").style.display = "none";
+        }
+        function abrir_Preguntas() {
+            document.getElementById("Preg").style.display = "block";
+        }
+        function cerrar_Preguntas() {
+            document.getElementById("Preg").style.display = "none";
+        }
+    </script>
+    <!--fin Java ventana flotante-->
+    <!--Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Custom JS-->
+    <script src="main.js"></script>
+</body>
+
+</html>

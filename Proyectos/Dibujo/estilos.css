@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 160px;
+    margin: 50px 50px;
+}
+
+.balde {
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 30px 100px 30px;
+    height: 0;
+    margin: 20px 0 50px 0;
+}
+
+.circulo{
+
+    position: absolute;
+    top: 5px;
+    border-style: solid;
+    border-color: rgba(128, 255, 0, 0.5);
+    border-width: 50px;
+    border-radius: 100px;
+}
+
+.circulo2{
+    position: absolute;
+    margin: 0 0 -30px -30px;
+    border-style: solid;
+    border-color: rgba(0, 17, 255, 0.5);
+    border-width: 80px;
+    border-radius: 100px;
+}

@@ -1,0 +1,29 @@
+/*Ejemplo
+
+/* BEBE */
+#contenedor #bebe:checked ~ #elementos .img-amor-amistad,
+#contenedor #bebe:checked ~ #elementos .img-cumple,
+#contenedor #bebe:checked ~ #elementos .img-exotica {
+    display: none;
+}
+
+/* Amor-amistad */
+#contenedor #amor-amistad:checked ~ #elementos .img-bebe,
+#contenedor #amor-amistad:checked ~ #elementos .img-cumple,
+#contenedor #amor-amistad:checked ~ #elementos .img-exotica  {
+    display: none;
+}
+
+/* Cumpleaños */
+#contenedor #cumple:checked ~ #elementos .img-amor-amistad,
+#contenedor #cumple:checked ~ #elementos .img-bebe,
+#contenedor #cumple:checked ~ #elementos .img-exotica {
+    display: none;
+}
+
+/* Exotico */
+#contenedor #exotica:checked ~ #elementos .img-amor-amistad,
+#contenedor #exotica:checked ~ #elementos .img-bebe,
+#contenedor #exotica:checked ~ #elementos .img-cumple{
+    display: none;
+}

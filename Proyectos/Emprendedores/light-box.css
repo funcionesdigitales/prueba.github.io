@@ -1,0 +1,217 @@
+.lightbox {
+  display: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll; /* coloca el scroll eje Y para la imagen */
+  text-decoration: none;
+}
+
+.lightbox >a{ /*Diseño y posicion de X Close*/
+  position:absolute;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  top: 6%;
+  left: 83%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  /*text-align: center;*/
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}
+
+
+.titulo_cliente{
+  padding: 5px 0 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: white;
+}
+.lightbox img {
+  width: 100%;
+  /*max-width: 900px;*/
+  margin: auto; /*Centrar la Imagen*/
+  overflow: hidden; /*Ocultar resto de Imagenes*/
+  position: relative; /*para poder modificar los botones*/
+  /*width: 60%;*/
+  height: auto;
+}
+
+.close{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+/* Instagram */
+
+
+.link_emprendedores >a {
+  /*display: inline;*/
+  margin: 50px 5px 0px 5px;
+  padding: 0 0 10px 0;
+  font-size: 40px;
+  justify-content: space-between;
+
+}
+
+.link_emprendedores p {
+  margin: 5px 0;
+  padding: 0 0 30px 0;
+  font-size: 20px;
+  /*text-align: center;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.social_emprendedores>p{
+  /*display: flex;*/
+  margin: 10px;
+  padding-top: 10px;
+  font-size: 30px;
+  text-shadow: #ffffff 0.1em 0.1em 0.2em;
+}
+
+.social_emprendedores{
+  background: rgba(192, 192, 192, 0.8);
+  margin-bottom: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+
+}
+
+
+.link_emprendedores .fa-whatsapp:hover{
+  color: rgb(0, 144, 0);
+  text-decoration: none;
+  /*text-shadow: -1px -1px #ffffff, 1px 1px #ffffff, -1px 1px #ffffff, 1px -1px #ffffff;*/
+
+}
+
+.link_emprendedores .fa-envelope:hover{
+    color: black;
+  /*-webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);*/
+  text-decoration: none;
+
+}
+
+.link_emprendedores .fa-facebook-f:hover {
+  color: #3b5998;
+
+}
+
+.link_emprendedores .fa-twitter:hover {
+  color: #00acee;
+}
+
+.link_emprendedores .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red {
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+}
+
+/* Facebook */
+.fb-post {
+  display: flex;
+  float: left;
+  padding-left: 20%;
+}
+
+/* Imagenes*/
+#imagen1:target, #imagen2:target, #imagen3:target, #imagen4:target, #imagen5:target, #imagen6:target, #imagen7:target, #imagen8:target, #imagen9:target, #imagen10:target, #imagen11:target, #imagen12:target, #imagen13:target, #imagen14:target, #imagen15:target, #imagen16:target, #imagen17:target, #imagen18:target, #imagen19:target, #imagen20:target, #imagen21:target {
+  display: flex;
+}
+
+
+@media screen and (max-width: 800px) {
+  .close {
+    background-color: black;
+    right: 60px;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  /* Instagram */
+  .red {
+    float: none;
+    padding: 1% 27%;
+  }
+
+  .titulo_cliente {
+    font-size: 20px;
+  }
+
+  /* Facebook */
+  .fb-post {
+    float: none;
+    padding-left: 0;
+  }
+  .social_emprendedores{
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .close {
+    top: 20px;
+    right: 40%;
+  }
+  .lightbox > img {
+    padding-top: 20%;
+    width: 100%;
+  }
+    .titulo_cliente {
+    font-size: 15px;
+  }
+  /* Instagram */
+  .red {
+    float: none;
+    padding: 0;
+  }
+  
+  .link_emprendedores p {
+  font-size: 14px;
+  }
+  
+  .social_emprendedores >p {
+  font-size: 18px;
+  }
+
+  .link_emprendedores >a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    /*font-size: 35px;*/
+  }
+
+}

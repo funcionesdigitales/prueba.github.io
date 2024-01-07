@@ -1,0 +1,56 @@
+
+.container-slider{
+    width: 60%;
+    max-width: 900px; /*cuando hay mas de una imagen*/
+    margin: auto; /*Centrar la Imagen*/
+    overflow: hidden; /*Ocultar resto de Imagenes*/
+    position: relative; /*para poder modificar los botones*/
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: auto;
+    margin-left: -100%; /*para el efecto Slider debe colocar la ultima imagen de primero*/
+}
+
+.slider__section{
+    width: 100%;
+}
+
+.slider__img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*para que las imagenes no se estiren*/
+    border-radius: 5%;
+}
+.slider__btn{ /*Estilos de los botones*/
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: black;
+}
+
+.slider__btn:hover{
+    background: white;
+}
+
+.slider__btn--left{
+    left: 5px;
+}
+
+.slider__btn--right{
+    right: 5px;
+}
+
+

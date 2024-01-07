@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/cont.css">
+    <script src="https://kit.fontawesome.com/c9387b58ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <a href="../index.html" class="close"><i class="fas fa-times"></i></a>
+        <h1 class="logo">Contacto</h1>
+        <div class="contact-form">
+            <form action="index.html" method="POST" class="contact-form" name="Form" id="my-form">
+                <p>
+                    <label>Nombre Completo</label>
+                    <input type="text" name="nombre" required>
+                </p>
+                <p>
+                    <label>E-mail</label>
+                    <input type="email" name="email" required>
+                </p>
+                <p>
+                    <label>N° Telefónico</label>
+                    <input type="tel" name="phone" required>
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" required>
+                </p>
+                <p class="block">
+                    <label>Mensage</label>
+                    <textarea name="message" rows="3" required></textarea>
+                </p>
+                <p class="block">
+                    <button type="submit">Enviar</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
